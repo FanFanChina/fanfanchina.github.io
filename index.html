@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Onism</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <!-- 设置浏览器图标 -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <!-- Theme: Simple Dark -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"
+    />
+    <!-- Custom theme stylesheet -->
+    <link rel="stylesheet" href="./theme-custom.css" />
+    <link rel="stylesheet" href="./themes/prism-dracula.css" />
+  </head>
+  <body>
+    <!-- 定义加载时候的动作 -->
+    <div id="app">正在加载中...</div>
+    <script>
+      window.$docsify = {
+        // 项目名称
+        name: "Onism",
+        // 仓库地址
+        repo: "https://github.com/fanfanchina",
+        // 侧边栏支持，默认加载的是项目根目录下的_sidebar.md文件
+        loadSidebar: false,
+        // 导航栏支持，默认加载的是项目根目录下的_navbar.md文件
+        loadNavbar: true,
+        // 封面支持，默认加载的是项目根目录下的_coverpage.md文件
+        coverpage: true,
+        // 封面独占
+        onlyCover: true,
+        // 最大支持渲染的标题层级
+        maxLevel: 5,
+        // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级（建议配置为2-4）
+        subMaxLevel: 4,
+        // 小屏设备下合并导航栏到侧边栏
+        mergeNavbar: true,
+
+        themeable: {
+          readyTransition: true, // default
+          responsiveTables: true, // default
+        },
+        search: "auto", // 默认值
+
+        search: [
+          "/", // => /README.md
+          "/guide", // => /guide.md
+          "/get-started", // => /get-started.md
+          "/zh-cn/", // => /zh-cn/README.md
+        ],
+
+        // 完整配置参数
+        search: {
+          maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+          paths: [], // or 'auto'
+          placeholder: "Type to search",
+          // 支持本地化
+          placeholder: {
+            "/zh-cn/": "搜索",
+            "/": "Type to search",
+          },
+          noData: "No Results!",
+          // 支持本地化
+          noData: {
+            "/zh-cn/": "找不到结果",
+            "/": "No Results",
+          },
+          // 搜索标题的最大层级, 1 - 6
+          depth: 2,
+          hideOtherSidebarContent: false, // 是否隐藏其他侧边栏内容
+          // 避免搜索索引冲突
+          // 同一域下的多个网站之间
+          namespace: "website-1",
+          pathNamespaces: ["/zh-cn", "/ru-ru", "/ru-ru/v1"],
+          pathNamespaces: /^(\/(zh-cn|ru-ru))?(\/(v1|v2))?/,
+        },
+        // 回到顶部插件
+        docsifyBackTop: {
+          size: 32, // 数值，组件大小，默认值32。
+          bottom: 15, // 数值，组件底部偏移距离，默认值15。
+          right: 15, // 数值，组件右侧偏移距离，默认值15。
+          logo: "🔝", // logo:字符串或svg矢量图代码，默认为svg代码图标。
+          bgColor: "\#2096ff", // 背景颜色，#fff、pink等，logo为svg图标时，不填。
+        },
+      };
+    </script>
+    <!-- docsify的js依赖 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <!-- docsify-themeable -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+    <!-- emoji表情支持 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+    <!-- 图片放大缩小支持 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <!-- 搜索功能支持 -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <!--在所有的代码块上添加一个简单的Click to copy按钮来允许用户从你的文档中轻易地复制代码-->
+    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+    <!-- jsDelivr -->
+    <script src="https://cdn.jsdelivr.net/gh/Sumsung524/docsify-backTop/dist/docsify-backTop.min.js"></script>
+    <!-- 本地引入 -->
+    <script src="js/docsify-backTop.min.js"></script>
+    <!-- 引入代码高亮文件 -->
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-c.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-cpp.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-asm6502.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-sql.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-python.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-json.min.js"></script>
+  </body>
+</html>
