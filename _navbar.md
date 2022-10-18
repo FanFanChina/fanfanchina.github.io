@@ -25,6 +25,7 @@
   - [Command](/Note/Toolkit/Command.md)
   - [Git](/Note/Toolkit/Git.md)
   - [MySQL](/Note/Toolkit/MySQL.md)
+  - [OpenCV](/Note/Toolkit/OpenCV.md)
   - [Server Machine](/Note/Toolkit/Server%20Machine.md)
   - [SQL Server](/Note/Toolkit/SQL%20Sever.md)
   - [SSH](/Note/Toolkit/SSH.md)
