@@ -9,6 +9,7 @@
   - [操作系统](/Note/Theory/C_操作系统.md)
   - [计算机网络](/Note/Theory/J_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.md)
 - 算法
+  - [Number Theory](/Note/Algorithm/Index/NumberTheory.md)
   - [笔记](/Note/Algorithm/ZNote.md)
   - [比赛](/Note/Algorithm/ZContest.md)
 - 前端
