@@ -5,7 +5,7 @@
 
 **步骤:**
 - 求A和B到达每一段的终点的时间ta和tb
-- for循环找到A和B相遇的路段，条件为(ta[i] <= tb[i] && ta[i + 1] >= tb[i - 1])
+- for循环找到A和B相遇的路段，条件为(ta[i] >= tb[i] && ta[i - 1] <= tb[i - 1])
 - 先到的等待后到的，然后一起走，时间为|Sa - Sb| / (Ai + Bi)
 
 ## 代码
@@ -36,9 +36,10 @@ int main() {
 	double ans = 0;
 	for(int i = 1; i <= n; i ++ )
 		// 找到相遇路段
-		if(ta[i] <= tb[i] && ta[i + 1] >= tb[i + 1])
+		if(ta[i] >= tb[i] && ta[i - 1] <= tb[i - 1])
 			ans = (x[i] - x[i - 1] + ta[i - 1] * A[i] + tb[i] * B[i]) / (A[i] + B[i]);
 	printf("%.2lf\n", ans);
 	return 0;
 }
 ```
+
