@@ -20,10 +20,13 @@
   - [Docker](/Note/BackEnd/Docker.md)
   - [Linux](/Note/BackEnd/Linux.md)
   - [Node.js](/Note/BackEnd/Node.js.md)
+- 机器学习
+  - [深度学习](/Note/DeepLearning/1.md)
 - 工具
   - [Command](/Note/Toolkit/Command.md)
   - [Git](/Note/Toolkit/Git.md)
   - [MySQL](/Note/Toolkit/MySQL.md)
+  - [Numpy](/Note/Toolkit/Numpy.md)
   - [OpenCV](/Note/Toolkit/OpenCV.md)
   - [Server Machine](/Note/Toolkit/Server%20Machine.md)
   - [SQL Server](/Note/Toolkit/SQL%20Sever.md)
