@@ -155,7 +155,9 @@ Page({
 })
 ```
 
-### 事件传参(在绑定函数的同时，不能传参)
+### 事件传参
+
+**Note: 小程序在绑定事件的同时不可以在函数后面传参数，而需要使用data-参数的方法传**
 
 ```html
 <button type="primary" bindtap="add" data-t1="{{2}}">Add</button>
@@ -177,7 +179,7 @@ Page({
         count: 1
     },
     add(e) {
-        this.setData({ count: this.data.count + e.target.dataset.t });
+        this.setData({ count: this.data.count + e.target.dataset.t1 });
     }
 })
 ```
