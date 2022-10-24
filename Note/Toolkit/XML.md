@@ -1,5 +1,7 @@
 ## XML
 
+
+
 ## DTD
 
 ## Schema
@@ -8,8 +10,9 @@
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml name space 前缀 - xs, 所以使用schema定义好的类型需要加上前缀xs:?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
-	
+    <xs:element name="city"/>
 </xs:schema>
 ```
 
@@ -89,6 +92,8 @@ positiveInteger仅包含正值的整数 (1, 2, ..)
 
 #### 复杂数据类型
 
+**Note: 复杂类型就是定义子元素和属性，一定要先定义子元素以何种方式出现，如Sequence**
+
 ```xml
 <?定义一个复杂数据address?>
 <xs:complexType name="address">
@@ -115,6 +120,34 @@ positiveInteger仅包含正值的整数 (1, 2, ..)
 
 ```xml
 <xs:element name="number" type="xs:string" fixed="001"></xs:element> 
+```
+
+#### 复杂样例
+
+```xml
+<xs:complexType name="student_type">
+    <xs:sequence>
+        <xs:element name="stu" type="stu_type"/>
+    </xs:sequence>
+</xs:complexType>
+<xs:element name="students" type="student_type"/>
+```
+
+#### 匿名类型样例
+
+**Note: 对于定义在元素内的类型可以不命名**
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="students">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="stu" type="stu_type"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
 ```
 
 #### 小练习
@@ -209,4 +242,99 @@ positiveInteger仅包含正值的整数 (1, 2, ..)
 	<xs:element name="students" type="students_type"/>
 </xs:schema>
 ```
+
+### 元素和属性限定
+
+#### 元素个数限制
+
+```xml
+<xs:complexType name="Orders_type">
+	<xs:sequence>
+		<xs:element name="Order" type="Order_type" minOccurs="1" maxOccurs="unbounded"/>
+	</xs:sequence>
+</xs:complexType>
+```
+
+#### 元素值唯一
+
+![](https://pic1.imgdb.cn/item/63560a8d16f2c2beb14e8882.png)
+
+#### 属性值唯一
+
+![](https://pic1.imgdb.cn/item/63560a8d16f2c2beb14e8885.png)
+
+### 元素和属性组
+
+#### 元素组
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:group name="myGroup">
+		<xs:sequence>
+			<xs:element name="haha"/>
+			<xs:element name="nihao"/>
+		</xs:sequence>
+	</xs:group>
+	<xs:complexType name="temp">
+		<xs:sequence>
+			<xs:group ref="myGroup"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
+```
+
+#### 属性组
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:attributeGroup name="myAttributeGroup">
+		<xs:attribute name="press" type="xs:string"/>
+		<xs:attribute name="ISBN" type="xs:string"/>
+	</xs:attributeGroup>
+	<xs:element name="book">
+		<xs:complexType>
+			<xs:attributeGroup ref="myAttributeGroup"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+```
+
+
+
+### 模式重用
+
+#### Include
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="www.a/b">
+	<simpleType name="bid">
+		<restriction base="string">
+			<pattern value="[A]\d{4}"
+		</restriction>
+	</simpleType>
+</schema>
+```
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="www.a/b">
+	<simpleType name="aid">
+		<restriction base="string">
+			<pattern value="[c]\d{4}"
+		</restriction>
+	</simpleType>
+</schema>
+```
+
+```xml
+```
+
+
+
+
+
+#### Import
 
