@@ -9,13 +9,13 @@
   - [操作系统](/Note/Theory/C_操作系统.md)
   - [计算机网络](/Note/Theory/J_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.md)
 - 算法
-  - [数论](/Note/Algorithm/Index/NumberTheory.md)
+  - [数论](/Note_Index/NumberTheory.md)
 - 前端
   - [HTML](/Note/FrontEnd/HTML.md)
   - [CSS](/Note/FrontEnd/CSS-Base.md)
   - [CSS 进阶](/Note/FrontEnd/CSS-Pro.md)
   - [JavaScript](/Note/FrontEnd/JavaScript.md)
-  - [小程序](/Note/FrontEnd/Mini-Program.md)
+  - [微信小程序](/Note/FrontEnd/Mini-Program.md)
 - 后端
   - [Docker](/Note/BackEnd/Docker.md)
   - [Linux](/Note/BackEnd/Linux.md)
