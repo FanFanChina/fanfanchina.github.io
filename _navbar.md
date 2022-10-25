@@ -9,32 +9,32 @@
   - [操作系统](/Note/Theory/C_操作系统.md)
   - [计算机网络](/Note/Theory/J_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.md)
 - 算法
-  - [数论](/Note_Index/NumberTheory.md)
+  - [数论](./Note_Index/NumberTheory.md)
 - 前端
   - [HTML](/Note/FrontEnd/HTML.md)
   - [CSS](/Note/FrontEnd/CSS-Base.md)
   - [CSS 进阶](/Note/FrontEnd/CSS-Pro.md)
   - [JavaScript](/Note/FrontEnd/JavaScript.md)
+  - [QT](/Note/FrontEnd/QT.md)
+  - [XML](/Note/FrontEnd/XML.md)
   - [微信小程序](/Note/FrontEnd/Mini-Program.md)
 - 后端
   - [Docker](/Note/BackEnd/Docker.md)
   - [Linux](/Note/BackEnd/Linux.md)
+  - [MySQL](/Note/BackEnd/MySQL.md)
   - [Node.js](/Note/BackEnd/Node.js.md)
-- 机器学习
-  - [深度学习](/Note/DeepLearning/1.md)
+  - [SQL Server](/Note/BackEnd/SQL%20Sever.md)
+  - [ServerMachine](/Note/BackEnd/ServerMachine.md)
 - 工具
   - [Command](/Note/Toolkit/Command.md)
   - [Git](/Note/Toolkit/Git.md)
-  - [MySQL](/Note/Toolkit/MySQL.md)
   - [Numpy](/Note/Toolkit/Numpy.md)
   - [OpenCV](/Note/Toolkit/OpenCV.md)
-  - [Server Machine](/Note/Toolkit/Server%20Machine.md)
-  - [SQL Server](/Note/Toolkit/SQL%20Sever.md)
   - [SSH](/Note/Toolkit/SSH.md)
   - [Tmux](/Note/Toolkit/Tmux.md)
   - [Vim](/Note/Toolkit/Vim.md)
-  - [XML](/Note/Toolkit/XML.md)
-- 其他
-  - [English](/Note/Other/English.md)
-  - [积极心理学](/Note/Other/J_%E7%A7%AF%E6%9E%81%E5%BF%83%E7%90%86%E5%AD%A6.md)
-  - [我的收藏](/Note/Other/教程收藏.md)
+- 未分类
+  - [AI 课程](Note/Unsorted//AI%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0.md)
+  - [English](/Note/Unsorted/English.md)
+  - [积极心理学](/Note/Unsorted/J_%E7%A7%AF%E6%9E%81%E5%BF%83%E7%90%86%E5%AD%A6.md)
+  - [教程收藏](/Note/Unsorted/J_%E6%95%99%E7%A8%8B%E6%94%B6%E8%97%8F.md)
