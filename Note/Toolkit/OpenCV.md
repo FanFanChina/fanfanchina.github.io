@@ -12,7 +12,7 @@ pip3 install opencv-contrib-python -i https://pypi.tuna.tsinghua.edu.cn/simple
 # 导包并重命名
 import cv2 as cv
 # cv.imread(图像路径, 1/0/-1)
-# 1  cv.IMREAD * COLOR：    (默认参数)以彩色模式加载图像，任何图像的透明度都将被忽略。这是
+# 1  cv.IMREAD * COLOR：    (默认参数)以彩色模式加载图像，任何图像的透明度都将被忽略
 # 0  cv.IMREAD * GRAYSCALE：以灰度模式加载图像
 # -1 cv.IMREAD_UNCHANGED：  包括alpha通道的加载图像模式
 img = cv2.imread('images/1.png', 0)
@@ -25,7 +25,18 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-```python
+### 解决窗口标题中文乱码问题
 
+由于openCV使用的是gbk编码，而py3使用的是utf-8编码所以需要先将编码转换为gbk编码
+
+```python
+# 将utf-8转化为gbk
+def zh_ch(string):    
+	return string.encode("gbk").decode(errors="ignore")
+```
+
+### 将图像转化为灰度图像
+
+```python
 ```
 
