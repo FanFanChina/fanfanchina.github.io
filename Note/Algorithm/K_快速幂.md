@@ -14,7 +14,7 @@
 
 ## 代码
 
-```c++
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -25,7 +25,7 @@ KMP其实是对暴力算法的优化
 
 ## 代码
 
-```c++
+```cpp
 #include <bits/stdc++.h>
 using namespace std;
 

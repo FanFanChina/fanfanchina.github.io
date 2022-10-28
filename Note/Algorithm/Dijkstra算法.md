@@ -16,7 +16,7 @@ Dijkstra算法 —— 单 / 多源基于贪心的最短路径算法
     - 将t加入确定距离的集合中去
     - 用t来更新其他未确定的点的距离
 
-```c++
+```cpp
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -74,7 +74,7 @@ int main() {
 
 我们用小顶堆加速这个过程，可以使用STL库中的priority_queue
 
-```c++
+```cpp
 #include <bits/stdc++.h>
 
 using namespace std;

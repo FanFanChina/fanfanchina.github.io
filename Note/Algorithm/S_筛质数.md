@@ -26,7 +26,7 @@
 
 ## 代码
 
-```c++
+```cpp
 // 朴素算法 O(nlogn)
 #include <bits/stdc++.h>
 using namespace std;
@@ -53,7 +53,7 @@ int main() {
 }
 ```
 
-```c++
+```cpp
 // 埃氏算法 O(nlog(log(n))
 #include <bits/stdc++.h>
 using namespace std;
@@ -80,7 +80,7 @@ int main() {
 }
 ```
 
-```c++
+```cpp
 // 线性筛法
 #include <bits/stdc++.h>
 using namespace std;
