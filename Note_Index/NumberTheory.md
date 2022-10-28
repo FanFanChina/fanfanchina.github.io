@@ -1,1 +1,9 @@
 - **[X_相遇问题](/Note/Algorithm/X_%E7%9B%B8%E9%81%87%E9%97%AE%E9%A2%98.md)**
+- **[C_差分](../Note/Algorithm/C_差分.md)**
+- **[E_二进制中1的个数](../Note/Algorithm/E_二进制中1的个数.md)**
+- **[F_分解质因数](../Note/Algorithm/F_分解质因数.md)**
+- **[G_高精度加法](../Note/Algorithm/G_高精度加法.md)**
+- **[K_快速幂](../Note/Algorithm/K_快速幂.md)**
+- **[S_筛质数](../Note/Algorithm/S_筛质数.md)**
+- **[S_试除法判定质数](../Note/Algorithm/S_试除法判定质数.md)**
+- **[Z_最大公约数](../Note/Algorithm/Z_最大公约数.md)**

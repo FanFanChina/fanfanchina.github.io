@@ -1,0 +1,1 @@
+- **[KMP字符串](../Note/Algorithm/KMP字符串.md)**

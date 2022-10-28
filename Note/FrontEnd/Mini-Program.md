@@ -157,7 +157,9 @@ Page({
 
 ### 事件传参
 
-**Note: 小程序在绑定事件的同时不可以在函数后面传参数，而需要使用data-参数的方法传**
+**Note01: 小程序在绑定事件的同时不可以在函数后面传参数，而需要使用data-参数的方法传**
+
+**Note02: 使用data-传参时，只能用小写，不能用大写**
 
 ```html
 <button type="primary" bindtap="add" data-t1="{{2}}">Add</button>

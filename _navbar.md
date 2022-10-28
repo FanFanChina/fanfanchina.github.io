@@ -9,7 +9,11 @@
   - [操作系统](/Note/Theory/C_操作系统.md)
   - [计算机网络](/Note/Theory/J_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.md)
 - 算法
+  - [入门](./Note_Index/BaseAlgorithm.md)
+  - [搜索](./Note_Index/BFS&DFS.md)
   - [数论](./Note_Index/NumberTheory.md)
+  - [图论](./Note_Index/GraphTheory.md)
+  - [字符串](./Note_Index/String.md)
 - 前端
   - [HTML](/Note/FrontEnd/HTML.md)
   - [CSS](/Note/FrontEnd/CSS-Base.md)
