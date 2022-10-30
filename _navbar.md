@@ -14,6 +14,7 @@
   - [数论](./Note_Index/NumberTheory.md)
   - [图论](./Note_Index/GraphTheory.md)
   - [字符串](./Note_Index/String.md)
+  - [未分类](./Note_Index/Unorder.md)
 - 前端
   - [HTML](/Note/FrontEnd/HTML.md)
   - [CSS](/Note/FrontEnd/CSS-Base.md)
