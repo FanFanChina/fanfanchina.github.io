@@ -79,6 +79,9 @@
 + purge - badge - 
 + media - medium
 + sequent - sequential - sequenc
++ chew - swallow
++ retail - retire
++ arithmetic - calcul
 ```
 
 ## Phrase
