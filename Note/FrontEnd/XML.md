@@ -338,3 +338,19 @@ positiveInteger仅包含正值的整数 (1, 2, ..)
 
 #### Import
 
+## 课外实践
+
+### 简介
+
+主题：使用微软的 ASP.NET框架制作网页
+
+介绍：
+
+软件: Visual Studio 2022
+
+组件： ASP.NET 开发和Web开发勾选 .NET Framework 项目和模板 和其他模板
+
+新建：web空项目、添加web form
+
+
+

@@ -1,4 +1,37 @@
-## 目录结构
+# 微信小程序
+
+## 基础知识
+
+### 和网页的不同点
+
+- WXML与HTML的不同点
+    - 标签名称不同
+        - HTML - div, span,  img, a
+        - WXML - view, text, image, navigator
+        
+    - 属性名称不同
+    
+    ```html
+    <a href="#">链接</a>
+    <navigator url="/pages/home/home"></navigator>
+    ```
+    
+    - 提供类似Vue的语法
+        - 数据绑定
+        - 列表渲染
+        - …
+    
+- WXSS与CSS的不同点
+    - 新增 rpx 尺寸单位，不同大小的屏幕会自动换算
+    - 提供全局WXSS和局部WXSS
+    - 仅支持部分CSS选择器
+    
+- JS
+    - app.js - 小程序入口文件
+    - pages的js文件 -  页面的入口文件
+    - utils的js文件 - 自己写的模块、函数
+
+### 小程序文件目录结构
 
 - **pages  - 小程序的页面**
     - wxml - 骨架
@@ -19,50 +52,9 @@
     - appid - 小程序ID
 - sitemap.json 用来配置小程序页面是否能被微信索引
 
-## 基础知识
+### WXML组件
 
-### 新建页面与设置首页面
-
-- 新建页面
-  
-    ```json
-    # 无需自己建一堆文件，只需在app.json文件内添加页面路径保存即可
-    "pages":[
-        "pages/index/index",
-        "pages/logs/logs",
-        "pages/list/list"
-      ]
-    ```
-    
-- 修改项目首页(默认渲染全局配置文件内的第一个page)
-
-### 小程序和网页的不同点
-
-- WXML与HTML的不同点
-    - 标签名称不同
-        - HTML - div, span,  img, a
-        - WXML - view, text, image, navigator
-    - 属性名称不同
-        - <a href=”#”>链接</a>
-        - <navigator url=”/pages/home/home”></navigator>
-    - 提供类似Vue的语法
-        - 数据绑定
-        - 列表渲染
-        - …
-- WXSS与CSS的不同点
-    - 新增rpx尺寸单位，不同大小的屏幕会自动换算
-    - 提供全局WXSS和局部WXSS
-    - 仅支持部分CSS选择器
-- JS
-    - app.js - 小程序入口文件
-    - pages的js文件 -  页面的入口文件
-    - utils的js文件 - 自己写的模块、函数
-
-## 组件
-
-### view
-
-### scroll-view
+- scroll-view
 
 ```html
 <scroll-view class="container1" scroll-y>
@@ -99,34 +91,27 @@
 }
 ```
 
-### image
+### wx:if 控制显示页面组件显示
 
-```css
-
+```html
+<view class="show" wx:if="{{!showBack}}" bindtap="showCardBack">显示答案</view>
 ```
 
-## 数据绑定
+### 数据绑定
 
-```js
-data: {
-    info: '你好世界'
-	imgSrc: 'www.xxxxx.com',
-	randomNum: Math.random() * 10
-},
-```
-
+在页面的html页面可以通过**Mustache**语法直接引用data中的变量值
 ```html
 <view>{{info}}</view>
 <image src="{{imgSrc}}"></image>
 <view>{{randomNum >= 5 ? 'haha' : 'nini'}}</view>
 ```
 
-## 事件绑定
+### 事件绑定
 
-### 点击输出
+- 点击输出
 
 ```html
-*<button type="primary" bindtap="btnTapHandler">按钮</button>*
+<button type="primary" bindtap="btnTapHandler">按钮</button>
 ```
 
 ```js
@@ -141,7 +126,7 @@ Page({
 })
 ```
 
-### 点击修改页面date的值
+- 点击修改页面date的值
 
 ```js
 Page({
@@ -186,21 +171,157 @@ Page({
 })
 ```
 
-## input事件绑定
+## 页面相关
+
+### 新建页面
+
+```json
+# 无需自己建一堆文件，只需在app.json文件内添加页面路径保存即可
+"pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/list/list"
+  ]
+```
+
+### 设置首页
+
+修改项目首页(默认渲染全局配置文件内的第一个page)
+
+### 页面跳转
+
+- 跳转到导航栏页面
+
+```js
+wx.switchTab({
+    url: '../home/home'
+})
+```
+- 跳转到非导航栏页面
+
+```js
+wx.navigateTo({
+    url: '/pages/home-search/home-search',
+})
+```
+- 跳转到非导航栏页面，并传参
 
 ```html
-<input bindinput="test_01"></input>
+<view bindtap="toRepositoryDetail" id='{"userName":"{{rep.user_name}}", "repositoryName":"{{rep.repository_name}}"}' class="home-bottom-rep">
 ```
 
 ```js
-Page({
-    test_01(e) {
-        console.log(e.detail.value);
-    }
+toRepositoryDetail(e) {
+    wx.navigateTo({
+        url: '/pages/repositoryDetail/repositoryDetail?rep=' + e.currentTarget.id,
+    })
+}
+```
+
+- 返回上一个页面
+
+```js
+wx.navigateBack({
+	delta: 0,
 })
 ```
 
-### 实现文本框和data数据之间的实时同步
+​    
+
+### 刷新页面
+
+```js
+this.onLoad()
+// 如果作用域不同，需要先获取到外部的this, 再调用onLoad()函数
+that.onLoad()
+```
+
+## 数据相关
+
+### 页面数据
+
+小程序页面的js文件中含有对象(键)**data**，其属性(值)代表该页面的全部**数据**
+
+```js
+data: {
+    info: '你好世界'
+	imgSrc: 'www.xxxxx.com',
+	randomNum: Math.random() * 10
+},
+```
+
+### 全局数据
+
+定义在app.js 中的数据 —— globalData中的变量可以被其他页面所引用
+
+```js
+globalData: {
+    color: '#28BFA0',
+    userName: '',
+    password: '',
+    userStatus: 0,
+    // 00b -- 0 -- 未登录
+    // 01b -- 1 -- 用户不存在 0 注册登录成功 1
+    // 10b -- 2 -- 用户存在 1 密码错误, 登陆失败 0
+    // 11b -- 3 -- 用户存在 1 密码正确, 登陆成功 1
+    userRegisterTime: '',
+    userRepositories: []
+},
+```
+
+为了方便其他页面引用，我们一般在其他页面中先定义一个app作为app.js的索引
+
+```js
+const app = getApp()
+let userName = app.globalData.userName
+let userRegisterTime = app.globalData.userRegisterTime
+```
+
+### 修改页面数据
+
+在页面的js文件中，不能直接给data中的对象赋值，要调用内置函数setData才能成功修改data中对象的值
+
+```javascript
+// 修改对象的值
+this.setData({info : "世界你好"})
+// 修改对象属性的值
+
+```
+
+### 修改全局数据
+
+```js
+// 可以直接赋值
+getUserName(e) {
+    app.globalData.userName = e.detail.value
+}
+```
+
+### 修改上一页页面数据
+
+```js
+// 获取当前页码
+let currentPages = getCurrentPages()
+// 获取前一页数据
+let prePage = currentPages[currentPages.length - 2]
+prePage.setData({['repData.cardNumber'] : Number(prePage.data.repData.cardNumber) + 1})
+```
+
+### 获取输入框的数据
+
+```html
+<input bindinput="getAddRepositoryName" type="text" maxlength="20" placeholder="请输入记忆库名称" />
+```
+
+```js
+getAddRepositoryName(e) {
+    this.setData({
+        repositoryName: e.detail.value
+    })
+}
+```
+
+### 获取文本框的数据
 
 ```html
 <input value="{{msg}}" bindinput="test_01"></input>
@@ -227,9 +348,25 @@ Page({
 })
 ```
 
-P22
+### 循环渲染数组数据
 
-## 窗口配置
+```html
+<!-- for循环遍历userRepositories数组，每一项都赋值给rep，指定主键为repository_name -->
+<view wx:for="{{userRepositories}}" wx:for-item="rep" wx:key="repository_name">
+```
+
+### 处理其它页面传入的数据
+
+```js
+onLoad(options) {
+    let rep = JSON.parse(options.rep)
+    this.setData({
+        repData: rep
+    })
+}
+```
+
+## 窗口相关
 
 ### 导航栏
 
@@ -309,9 +446,21 @@ wx.request({
 
 ## 开发经验总结
 
+### JS中的日期对象转化
+
+```js
+// 转化为MySQL支持的格式 - 2000-01-01 12:00:00
+let learnTime = new Date().toISOString().slice(0, 19).replace('T', ' ')
+// 获取毫秒数
+new Date().getTime()
+// 使用毫秒数定义日期对象
+new Date(86400000)
+// 计算两个日期相差天数
+let days = parseInt((new Date().getTime() - new Date(userRegisterTime).getTime()) / 86400000)
+```
+
 ### 云端和本地数据同步问题
 
 - 云端更新 >> 本地重新获取
 - 云端数据修改时，和本地数据不处于同一页面时，返回本地数据页面再刷新数据
 - 云端数据修改时，和本地数据处于同一页面时，直接刷新
-
