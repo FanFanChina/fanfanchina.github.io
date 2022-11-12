@@ -82,6 +82,7 @@
 + chew - swallow
 + retail - retire
 + arithmetic - calcul
++ failed - field
 ```
 
 ## Phrase
