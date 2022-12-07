@@ -23,6 +23,13 @@ justify-content: space-between; /*相同间隔*/
 margin:0 auto;
 ```
 
+```css
+position: relative;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+```
+
 ### 图片在div中居中
 
 ```css

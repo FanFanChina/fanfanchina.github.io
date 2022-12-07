@@ -1,0 +1,1 @@
+- **[Special Permutation](./../Note/Algorithm/Special_Permutation.md)**

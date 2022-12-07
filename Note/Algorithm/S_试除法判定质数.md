@@ -4,7 +4,7 @@
 
 ## 解析
 
-**Category:** Number Theory
+**Category:** Math Theory
 
 ## 代码
 
