@@ -9,13 +9,13 @@
   - [操作系统](/Note/Theory/C_操作系统.md)
   - [计算机网络](/Note/Theory/J_%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C.md)
 - 算法
-  - [Base](./Note_Index/BaseAlgorithm.md)
+  - [Base Algorithm](./Note_Index/BaseAlgorithm.md)
   - [Constructive Algorithm](./Note_Index/ConstructiveAlgorithm.md)
   - [Graph Theory](./Note_Index/GraphTheory.md)
   - [Math Theory](./Note_Index/NumberTheory.md)
-  - [Search](./Note_Index/BFS&DFS.md)
-  - [String](./Note_Index/String.md)
-  - [Unorder](./Note_Index/Unorder.md)
+  - [Search Algorithm](./Note_Index/BFS&DFS.md)
+  - [String Algorithm](./Note_Index/String.md)
+  - [Unorder Algorithm](./Note_Index/Unorder.md)
 - 前端
   - [HTML](/Note/FrontEnd/HTML.md)
   - [CSS](/Note/FrontEnd/CSS-Base.md)
