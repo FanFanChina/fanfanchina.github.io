@@ -1709,40 +1709,132 @@ int main()
 # `STL`
 ## `vector`
 
-### `简介`
-
 **vector：向量**
+
 **一个低维空间的向量可以在无数个高维空间上进行表示，所以一个 vector 的大小是可拓展的**
 **vector 可以看成一个单端数组，左闭右开。**
 
 **写法：vector<数据类型> 变量名**
 
 ```cpp
-vector<int> a;//定义一个放int的向量a
+vector<int> a; // 定义一个放int的向量 a
 ```
-
-
 
 > vector 与普通数组区别 在于数组是`静态`空间，而 vector 可以`动态`扩展，且动态扩展并不是在原空间之后续接新空间，而是`找更大的内存空间`，然后将原数据`拷贝`新空间，`释放`原空间！
 
-------
+**[CSDN 上关于 voctor 的博客](https://blog.csdn.net/weixin_41743247/article/details/90635931?ops_request_misc=%7B%22request%5Fid%22%3A%22163073130216780366569702%22%2C%22scm%22%3A%2220140713.130102334..%22%7D&request_id=163073130216780366569702&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-90635931.first_rank_v2_pc_rank_v29&utm_term=vector&spm=1018.2226.3001.4187)**
 
-### `CSDN_Voctor`
+## `set`
 
-**[voctor](https://blog.csdn.net/weixin_41743247/article/details/90635931?ops_request_misc=%7B%22request%5Fid%22%3A%22163073130216780366569702%22%2C%22scm%22%3A%2220140713.130102334..%22%7D&request_id=163073130216780366569702&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-90635931.first_rank_v2_pc_rank_v29&utm_term=vector&spm=1018.2226.3001.4187)**
+- set 中的元素都是排序好的 （默认从小到大）
+- set 中的元素都是唯一的，没有重复的
 
-***
+```cpp
+// 获取首位元素的值（注意要加*，因为返回的是地址）
+#include <bits/stdc++.h>
+using namespace std;
 
-## `优先队列`
+int main() {
+    set <int> s;
+    s.insert(2);
+    s.insert(1);
+	cout << *s.begin() << endl;
+    cout << *s.end() << endl;
+	return 0;
+}
+```
+
+```cpp
+// 定义 set、插入 set、遍历 set
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    set <int> s;
+    s.insert(1);
+    s.insert(2);
+    s.insert(2);
+    cout << "s.size() = " << s.size() << endl;
+    // 定义一个 set <int> 的迭代器（指针）
+    set <int>::iterator it;
+    // 遍历 s
+    for(it = s.begin(); it !=s.end(); it ++ ) cout << *it << ' ';
+    return 0;
+}
+```
+
+```cpp
+// 使用 auto 简化遍历一
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    set <int> s;
+    s.insert(1);
+    s.insert(2);
+    s.insert(2);
+    cout << "s.size() = " << s.size() << endl;
+    // 遍历 s
+    for(auto it = s.begin(); it !=s.end(); it ++ ) cout << *it << ' ';
+    return 0;
+}
+```
+```cpp
+// 使用 auto 简化遍历二
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    set <int> s;
+    s.insert(1);
+    s.insert(2);
+    s.insert(2);
+    cout << "s.size() = " << s.size() << endl;
+    // 遍历 s
+    // 使用 (auto it : s) 时 it 已经是地址指向的值了，无需加*
+    for(auto it : s) cout << it << ' ';
+    cout << endl;
+    return 0;
+}
+```
+
+```cpp
+// 自定义排序规则（重载（）运算符）
+// 要在结构体或类里面写
+// 注意结构体末尾要加 ; 号
+
+#include <bits/stdc++.h>
+using namespace std;
+
+// 从大到小（看大于小于号方向）
+struct cmp {
+    bool operator() (const int &a, const int &b) const {
+        return a > b;
+    }
+};
+
+int main() {
+    set <int, cmp> s;
+    s.insert(1);
+    s.insert(2);
+    s.insert(2);
+    // 遍历 s
+    for(auto it : s) cout << it << ' ';
+    cout << endl;
+    return 0;
+}
+```
+----
+
+## `priority_queue`
 
 **一、头文件：queue**
 
 **二、写法：priority_queue <数据类型，容器类型，排序方式>**
 
-### 例子（1）
+**例一：**
 
 ```cpp
-cpp
 #include<queue>
 priority_queue<int, vector<int>, greater<int> >Q;
 ```
@@ -1759,12 +1851,9 @@ priority_queue<int, vector<int>, greater<int> >Q;
 
 **相关链接：[bitMap - 位运算](https://xn--ctta.icu/2021/07/27/1.算法与数据结构/01.算法/05.图论算法/Bit Map/)**
 
-------
-
-### 例子（2）
+**例二：**
 
 ```cpp
-cpp
 #include<queue>
 #include<iostream>
 using namespace std;
@@ -1796,13 +1885,13 @@ int main()
 
 ------
 
-## `sort函数`
+## `sort 引入规则`
 
 **头文件：algorithm**
 **写法如下：**
 
 ```cpp
-#include<algorithm>
+#include <algorithm>
 sort(起始地址,结束地址,排序方式);
 ```
 
