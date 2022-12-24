@@ -4,36 +4,32 @@
 + famine - starve - drought - plague - pandemic - epidemic
 + trader - dealer - retail
 + breathe - respire - respirator - respiratory - inhale - exhale
-+ emerge - engage - engine
-+ reveal - rival - reside - resist - insist - retrieve - restrict
-+ slight - tedious - superficial - thin - thick - thicket - jungle
++ reveal - divulge 
++ reside - inhabit - settle - unsettle - migrate
++ retrieve - recover - recruit - engage - engaging - emerge - engine
++ slight - superficial - thin - thick - thicket - jungle
++ tedious - prolix - tiresome
 + lucid - conscious
-+ chlorophyll - vitamin - victim
 + benign - malign
 + soar - sore - shoe - sole - solely
-+ calcium - cholesterol - protein
-+ frigure - vulnerable - delicate - dedicate - indicate  - indicator - devote - decade - century
++ vulnerable - fragile - delicate - dedicate - indicate - indicator - devote - decade - century
 + facility - facilitate - feasible
 + diabetes - diarrhea
-+ confound - confuse - puzzle - pause
 + physical - physics - physician - surgeon - surgery
 + sign - signal - single
 + verbal - literal - literary
-+ hunt - hount - hint - imply
 + tablet - pharmacy
 + liver - spleen - stomach - lung
-+ Autria - Australia
++ Austria - Australia
 + infant - infancy - adolescent - adolescence
 + observe - comment - criticize - critical
-+ onion - tomato - banana - watermelon - pear
 + obstacle - hinder
 + head - hand - hide
 + tropical - temperate - temperature - temporal - temporary - temple - template
 + asset - property - treasure - estate - state - status - statue
 + sponsor - spouse - couple	
 + regular - regulate
-+ essay - issue - tissue - novel - fiction - friction
-+ mineral - metal - metalic - iron
++ mineral - metal - metallic - iron
 + landscape - scenery
 + boom - prosperity
 + attain - achieve - archive
@@ -45,44 +41,86 @@
 + cereal - bean - wheat
 + haptic - tactile
 + severe - 
-+ simulate - stimulate
-+ tutor - tutorial - toroidal
-+ nutrition - nourishment - nutrient
 + opera - drama - dramatic - 
 + decline - incline
 + instinct - instinctual - distinct - distinctive
-+ special - specimen - sample
++ special - specimen - sample - simple - straightforward
 + empire - emperor - prince
 + restrict - constrict - constrictor - boa constrictor - snake - python - anaconda
-+ hunt - chase - track - arrest - prey - capture
 + primeval - original - origin - orient
-+ profess - prefessor - profession - career - cancer - crab
 + eagle - eager
 + change - convert - shift - alter - alternative - alert - alarm - warn
 + Disney - dynasty
 + invoke - provoke
 + passion - passionate - eager
 + slip - slide
-+ common - general - commonplace - command - commend - comment
++ common - general - commonplace - command - commend - recommend - comment
 + desire - desirable - desert
 + disease - 
-+ brew - wine - whale
 + oxygen - hydrogen - nitrogen
 + angle - angel
 + exceed - 
 + tobacco - cigar
-+ advert - advertise - advertiser - advertisement - adverse -  advise - advice - devise - device - appliance
++ advert - advertise - advertiser - advertisement - adverse - advise - advice - devise - device - appliance
 + file - folder - unfold
 + merge - combine
 + period - periodic - periodical
 + native - indigenous
 + purge - badge - 
 + media - medium
-+ sequent - sequential - sequenc
-+ chew - swallow
++ chew - swallow - bite
 + retail - retire
-+ arithmetic - calcul
-+ failed - field
++ arithmetic - calculate
++ failed - field - domain - region - destrict - restrict
++ ancient - ancestor - ancestral
++ family - familiar - familiarize
++ fame - reputation - prestige - prestigious
++ city -  mayor - state - governor - continent
++ deputy - proxy - agent - agency
++ definite - certain
++ solid - substantial - sustain - sustained
++ labor - laborious - diligent - conscientious - conscience
++ efficient - proficient - deficient - deficiency - lack - leak - shortage
++ collaborate - cooperate - cartel - consortium - syndicate
++ chief - executive - minister - chairmen
++ meeting - conference - committee - council
++ straight - upright - straightforward - vertical - horizontal - direct - indirect
++ chronic - acute
++ know - cognize - cognition - cognitive
++ area - bulk - volume - line - column
++ coach - guide - guideline - instruct - instructor - mentor - tutor - tuition - tutorial - toroidal
++ tour - tourist - tourism - travel - traveller - journey - journal - journalist - journalism
++ murderer - victim
++ persuade - prevail - prevalent - current - popular - fashionable
++ hunt - chase - purchase - track - arrest - prey - capture - chapter
++ hunt - haunt - haunting - hint - imply
++ pursue - pursuer - persuit
++ profess - professor - profession - career - cancer - tumor - crab - employment
++ assist - assistant - assistance - consist - consistent - insist - insistent - persist - resist - resistant
++ pack - packet - parcel - wrap - bandage - toolkit - compact - chamber
++ stake - stick - baton - torch - bacteria - microbe - microorganism - bandit - robber - blend - fuse - fusion - melt
++ confuse - confound - puzzle - pause - rest - recess
++ club - bar - pub - association - institution - league - union - federation - cartel
++ repair - mend - patch - tinker
++ pleasure - pleasurable - please - pleasant - delight - delightful
++ arrange - schedule - sort - sequent - sequential - sequence - permute - permutation - array
++ adverse - diverse - inverse - obverse - reverse 
++ essay - editorial - issue - release - tissue - novel - fiction - friction
++ relieve - facilitate - comfort - lessen - console
++ rival - contestant - emulate - emulator - simulate - stimulate - accumulate
++ mutual - correlative
+```
+
+```sh
++ 生活类
++ onion - tomato - banana - watermelon - pear - pineapple
++ hammer - spanner - screwdriver - plier - scissors
++ lamp - keyboard - wireless mouse - autopen - personal computer
++ desk - table - cup - plate - glass - spoon - knife
++ season - spring - fountain - summer - autumn - winter
++ bake - roast - oven - brew - wine - cheers
++ diet - calorie - nutrition - malnutrition - nourishment - undernourishment - nutrient - calcium - cholesterol - protein - vitamin - chlorophyll
++ crab - whale
 ```
 
 ## Phrase
@@ -92,6 +130,9 @@
 + make a difference
 + attach great importance to - take ...  very seriously
 + go hand in hand with
++ prestigious university
++ chief executive officer
++ chief financial officer
 ```
 
 ## Sentence
