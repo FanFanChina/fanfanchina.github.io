@@ -5,7 +5,6 @@
 + breathe - respire - respirator - respiratory - inhale - exhale
 + reveal - divulge 
 + reside - inhabit - settle - unsettle - migrate
-+ slight - superficial - thin - thick - thicket - jungle
 + tedious - prolix - tiresome
 + lucid - conscious
 + benign - malign
@@ -25,23 +24,18 @@
 + regular - regulate
 + mineral - metal - metallic - iron
 + landscape - scenery
-+ boom - prosperity
-+ attain - achieve - archive
 + bridge - badge
 + wood - timber
 + idol - idiom - proverb
 + genu - genuine - authentic - indeed
 + cereal - bean - wheat
 + haptic - tactile
-+ severe - 
-+ special - specimen - sample - simple - straightforward
 + empire - emperor - prince
 + restrict - constrict - constrictor - boa constrictor - snake - python - anaconda
 + primeval - original - origin - orient
 + change - convert - shift - alter - alternative - alert - alarm - warn
 + Disney - dynasty
 + invoke - provoke
-+ passion - passionate - eager
 + slip - slide
 + common - general - commonplace - command - commend - recommend - comment
 + desire - desirable - desert
@@ -60,15 +54,12 @@
 + failed - field - domain - region - destrict - restrict
 + ancient - ancestor - ancestral
 + fame - reputation - prestige - prestigious
-+ city -  mayor - state - governor - continent
 + deputy - proxy - agent - agency
 + definite - certain
 + labor - laborious - diligent - conscientious - conscience
 + efficient - proficient - deficient - deficiency - lack - leak - shortage
 + collaborate - cooperate - cartel - consortium - syndicate
 + chief - executive - minister - chairmen
-+ meeting - conference - committee - council
-+ straight - upright - straightforward - vertical - horizontal - direct - indirect
 + know - cognize - cognition - cognitive
 + area - bulk - volume - line - column
 + coach - guide - guideline - instruct - instructor - mentor - tutor - tuition - tutorial - toroidal
@@ -79,7 +70,7 @@
 + pursue - pursuer - persuit
 + profess - professor - profession - career - employment
 + assist - assistant - assistance - consist - consistent - insist - insistent - persist - resist - resistant
-+ pack - packet - parcel - wrap - bandage - toolkit - compact - chamber
++ pack - packet - parcel - wrap - bandage - toolkit - chamber
 + stake - stick - baton - torch - bacteria - microbe - microorganism - bandit - robber - rubber - blend - fuse - fusion - melt
 + confuse - confound - puzzle - pause - rest - recess
 + club - bar - pub - association - institution - league - union - federation - cartel
@@ -112,13 +103,11 @@
 + resume - vitae
 + internal - domestic - external - abroad - oversea - foreign
 + matrix - grid
-+ eagle - eager - hawk
 + asset - property - treasure - wealth - estate - state - statement - status - statue - incise
 + starve - starvation - famine - wet - dry - drought - poverty - plague - pandemic - epidemic
-+ beast - monster - breast - chest - breastfeed - feed - cultivate - foster - civilize - nourish - nourishment - undernourishment - nutrition - nutrient - malnutrition
 + vulnerable - fragile - delicate - dedicate - devote - indicate - indicator - decade - century - annual
 + admit - admission - permit - permission - acknowledge - recognize - confess
-+ impact - implicate - crash - crisis
++ impact - implicate - crash - clash - crisis
 + compare - comparable - comparison - contrast
 + bear - endure - enduring - lasting - everlasting - permanent - patient - patience
 + opera - operatic - operate - drama - dramatic
@@ -126,7 +115,6 @@
 + chche - buffer
 + ignore - neglect
 + middle - center - central - concert
-+ plant - planet
 + mortal - mortality - lifespan
 + consult - consultant - consultancy
 + firm - stable - steady - company - corporate - corporation - enterprise - enterpriser - entrepreneur - busy - business
@@ -134,19 +122,45 @@
 + illusion - delusion
 + invade - infiltrate - occupy - possess
 + broad - broaden - aggrandize - roomy - spacious - cozy - airy
-+ principal - prime - major - principle - theory - criterion
-+ destine - destiny - fate
-+ disease - chronic - acute - diabetes - diarrhea - cancer - tumor - hypertension - stroke - stiffneck - cholera
-+ discipline - drill - exercise - practice - coach
 + geology - geologic - geologist
 + biology - biological(biotic) - biologist
 + ecology - ecological - ecologist - ecosystem
 + architecture - architectural - architect
 + physics - physical - physicist - physician - surgeon - surgery
-+ arctic - lodestar - antarctica
++ psychology - psychological - psychologist
 + advert - advertise - advertiser - advertisement - advise - advice - devise - device - appliance
 + advert - divert - invert - obvert - revert
-+ adverse - diverse - inverse - obverse - reverse
++ adverse - diverse - diversity - inverse - obverse - reverse
++ special - specimen - sample - simple - straightforward
++ straight - upright - straightforward - vertical - horizontal - direct - directory - indirect
++ consume - expense - purchase - grasp - grip - consumer - customer - client - consumption
++ clinic - clinical
++ explode - explosive - explosion - erupt - eruptive - eruption - volcano - volcanic
++ acquire - attain - obtain - achieve - archive
++ boom - bamboo - prosperity
++ disease - chronic - acute - drastic - diabetes - diarrhea - cancer - tumor - hypertension - stroke - stiffneck - cholera - rash
++ slight - superficial - thin - thick - dense - densely - thicket  - jungle
++ dashboard - blackboard - chalkboard - leader board - keyboard
++ discipline - disciplinary - drill - bore - boring - bored - boredom - exercise - practice - coach
++ indulge - indulgent - indulgence
++ eagle - hawk - eager - passion - passionate - yearn - yarn - carve
++ aviator - pilot
++ destine - destiny - fate - fortune - misfortune - fortunate
++ hate - abhor - abhorrent - detest - loathe - disgust
++ guard - guardian - defend - protect - shelter - monitor - principal - president
++ principal - prime - major - principle - theory - criterion
++ city - mayor - state - governor - continent
++ strict - severe - stringent - rigorous
++ catalog - catalogue - directory - category - classify
++ reshape - reform - revolution - revolutionary	- innovation - innovative
++ virtue - merit - vain - vanity - pride - glory - honour - by virtue of - virtual - VR (virtual reality)
++ heir - inherit - inherent - descend - descendant - lineage
++ meeting - conference - committee - council
++ arctic - lodestar - antarctica - equator - orbit - planet - plant
++ court - courtroom - judge - plaintiff - defendant
++ beast - monster - breast - chest - breastfeed - feed - cultivate - foster - civil - civilize - nourish - nourishment - undernourishment - nutrition - nutrient - malnutrition
++ pact - compact - contract - bargain - concise - brief - shrink
++ abbreviate - abbreviation
 ```
 
 ```sh
@@ -155,12 +169,12 @@
 + lamp - keyboard - wireless mouse - autopen - personal computer
 + season - spring - fountain - summer - autumn - winter
 + bake - roast - oven - brew - wine - cheers
-+ crab - whale
++ crab - whale - eagle - hawk
 + meat - vegetable - fruit
 + desk - table - cup - cap - hat - plate - plateau - glass - spoon - knife
 + tie - necktie
 + hammer - spanner - screen - screw - screwdriver - plier - scissors
-+ diet - calorie - calcium - cholesterol - protein - vitamin - chlorophyll - cereal
++ diet - calorie - calcium - cholesterol - protein - hormone - vitamin - chlorophyll - cereal
 + brow - browse - browser - cheek
 + camera - cinema - cinnamon
 ```
