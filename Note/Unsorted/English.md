@@ -8,13 +8,11 @@
 + tedious - prolix - tiresome
 + lucid - conscious
 + benign - malign
-+ soar - sore - shoe - sole - solely
 + facility - facilitate - feasible
 + sign - signal - single
 + verbal - literal - literary
 + tablet - pharmacy
 + liver - spleen - stomach - lung
-+ Austria - Australia
 + infant - infancy - adolescent - adolescence
 + observe - comment - criticize - critical
 + obstacle - hinder
@@ -98,7 +96,7 @@
 + spark - trigger - initiate - start - startle - startling
 + loyal - faithful - faith - loyalty - layer
 + quota - portion - proportion - fraction - quote - cite - quotes
-+ solid - substantial - sustain - sustained - sustainable - endure - enduring - ongoing - duration
++ soil - solid - substantial - sustain - sustained - sustainable - endure - enduring - ongoing - duration
 + modify - correct 
 + resume - vitae
 + internal - domestic - external - abroad - oversea - foreign
@@ -161,6 +159,10 @@
 + beast - monster - breast - chest - breastfeed - feed - cultivate - foster - civil - civilize - nourish - nourishment - undernourishment - nutrition - nutrient - malnutrition
 + pact - compact - contract - bargain - concise - brief - shrink
 + abbreviate - abbreviation
++ Asia - Austria - Australia
++ moreover - furthermore - in addition - besides
++ junction - juncture - adjunct - adjacent - conjunct - conjunction
++ sore - soar - sour - shoe - sole - solely
 ```
 
 ```sh
@@ -199,3 +201,5 @@
 > I buried my memories in that summer.
 
 > The star river is slightly bright and the starlight lasts forever.
+
+> I am sore from soaring and drinking sour milk.
